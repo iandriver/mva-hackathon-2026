@@ -1,0 +1,19 @@
+/Users/iandriver/Downloads/mva-hackathon-2026/tools/tmpnn-env/lib/python3.10/site-packages/Bio/pairwise2.py:278: BiopythonDeprecationWarning: Bio.pairwise2 has been deprecated, and we intend to remove it in a future release of Biopython. As an alternative, please consider using Bio.Align.PairwiseAligner as a replacement, and contact the Biopython developers if you still need the Bio.pairwise2 module.
+  warnings.warn(
+/Users/iandriver/Downloads/mva-hackathon-2026/tools/tmpnn-env/lib/python3.10/site-packages/torchmetrics/utilities/prints.py:43: UserWarning: Metric `SpearmanCorrcoef` will save all targets and predictions in the buffer. For large datasets, this may lead to large memory footprint.
+  warnings.warn(*args, **kwargs)
+            Model        Dataset  ddG_pred  ... mutation            pdb chain
+0      ThermoMPNN  BUBR1_AF_full -0.109146  ...        A  BUBR1_AF_full     A
+1      ThermoMPNN  BUBR1_AF_full -0.250796  ...        C  BUBR1_AF_full     A
+2      ThermoMPNN  BUBR1_AF_full -0.189428  ...        D  BUBR1_AF_full     A
+3      ThermoMPNN  BUBR1_AF_full -0.169529  ...        E  BUBR1_AF_full     A
+4      ThermoMPNN  BUBR1_AF_full   0.10446  ...        F  BUBR1_AF_full     A
+...           ...            ...       ...  ...      ...            ...   ...
+20995  ThermoMPNN  BUBR1_AF_full   0.09528  ...        S  BUBR1_AF_full     A
+20996  ThermoMPNN  BUBR1_AF_full  0.081558  ...        T  BUBR1_AF_full     A
+20997  ThermoMPNN  BUBR1_AF_full  0.123198  ...        V  BUBR1_AF_full     A
+20998  ThermoMPNN  BUBR1_AF_full -0.160359  ...        W  BUBR1_AF_full     A
+20999  ThermoMPNN  BUBR1_AF_full  0.042986  ...        Y  BUBR1_AF_full     A
+
+[21000 rows x 8 columns]
+Saved ThermoMPNN output to /Users/iandriver/Downloads/mva-hackathon-2026/structures/ThermoMPNN_inference_BUBR1_AF_full.csv

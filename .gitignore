@@ -1,0 +1,34 @@
+tools/*-env/
+tools/ThermoMPNN/
+tools/maayan-lab-tools-skills/
+
+# Analysis outputs. Some carry proband genotypes (a filtered VCF, annotated variant
+# tables), which the organisers' 30-day deletion list covers. Regenerate with scripts/.
+# What may be retained -- ranked candidate lists, mechanism analyses, code, reports --
+# lives in submissions/ and findings/ instead.
+results/
+
+# splice_sv: Python environments and bulky regenerable artifacts (public data)
+splice_sv/alphagenome_control/.venv*/
+splice_sv/alphagenome_control/.venv-spliceai-install.log
+splice_sv/**/ref/
+# The broad `results/` rule above also hides the control's PUBLIC reduced scores.
+# Re-include that dir and its files, but keep raw shards and logs out.
+!splice_sv/alphagenome_control/results/
+!splice_sv/alphagenome_control/results/*
+splice_sv/alphagenome_control/results/shards/
+splice_sv/alphagenome_control/results/*.log
+splice_sv/alphagenome_control/data/kmer_panel.json
+results/align/
+splice_sv/**/ref/hg38/
+
+# Secrets: never commit an API key (this repo is headed for public)
+.env
+.env.*
+.claude/settings.local.json
+
+__pycache__/
+*.pyc
+
+# macOS Finder metadata
+.DS_Store

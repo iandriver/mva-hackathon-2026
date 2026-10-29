@@ -1,0 +1,66 @@
+Licensing for this repository
+==============================
+
+This repository mixes written work, code, and outputs of third-party tools. Each part is licensed
+separately, as follows.
+
+1. Reports, findings and other written material
+-----------------------------------------------
+Everything under submissions/, findings/, track2/ and splice_sv/findings/, together with the
+Markdown documentation elsewhere, is licensed under the Creative Commons Attribution 4.0
+International licence (CC BY 4.0), as the Hackathon rules require for submissions:
+https://creativecommons.org/licenses/by/4.0/
+
+Copyright (c) 2026 Ian Driver
+
+2. Code
+-------
+Everything under scripts/ and splice_sv/scripts/, and the Python and shell sources in
+splice_sv/alphagenome_control/, is licensed under the MIT License:
+
+MIT License
+
+Copyright (c) 2026 Ian Driver
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+3. Third-party outputs (not relicensed here)
+--------------------------------------------
+The following files are outputs of, or derived from, third-party models and databases. They
+are distributed under those parties' terms, not under section 1 or 2.
+
+- AlphaGenome outputs: splice_sv/alphagenome_control/results/per_variant_scores.csv,
+  positive_ranks.csv and compare_ag_spliceai.csv. These are subject to the AlphaGenome Output
+  Terms of Use (splice_sv/alphagenome_control/LEGALLY_BINDING_TERMS_OF_USE.txt;
+  https://deepmind.google.com/science/alphagenome/output-terms): non-commercial use, and not for
+  clinical decision-making. Cite Avsec et al. 2026.
+- SpliceAI scores: splice_sv/alphagenome_control/results/spliceai_D50.vcf, the SpliceAI columns
+  of compare_ag_spliceai.csv, and splice_sv/scripts/calibration/bub1b_spliceai_calibration.csv.
+  These were generated with SpliceAI 1.3.1, whose models are licensed CC BY-NC 4.0. Cite
+  Jaganathan et al. 2019, doi:10.1016/j.cell.2018.12.015.
+- AlphaFold DB models: structures/BUBR1_AF_full.pdb and BUBR1_AF_kinase_766_1050.pdb, derived
+  from AF-O60566-F1. AlphaFold DB data are CC BY 4.0. Cite Jumper et al. 2021 and the
+  AlphaFold Protein Structure Database.
+- ThermoMPNN predictions: structures/ThermoMPNN_inference_*.csv. Cite doi:10.1073/pnas.2314853121.
+- Multiple sequence alignment: tools/ddgun-work/bubr1_kinase.aln and .prof, built with the
+  ColabFold MMseqs2 server from UniRef sequences. UniProt data are CC BY 4.0.
+- gnomAD-derived variant panels: splice_sv/alphagenome_control/data/bub1b_snvs.json, panel.json
+  and panel.vcf. These are derived from gnomAD v4 public data; see the gnomAD terms.
+
+No primary Hackathon data is included in this repository (see DATA_HANDLING.md).

@@ -1,0 +1,9 @@
+type,position,support
+softclip_breakpoint,chr15:40214833,18
+softclip_breakpoint,chr15:40180667,13
+softclip_breakpoint,chr15:40193492,8
+discordant_cluster,chr15:40208000-40208499,5
+discordant_cluster,chr15:40215000-40215499,5
+me_homology_AluY,multiple,35
+me_homology_SVA_E,multiple,2
+me_homology_L1HS,multiple,2
